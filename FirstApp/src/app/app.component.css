@@ -1,0 +1,13 @@
+.navbar{
+  background-color: gainsboro;
+  padding: 10px;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 20px;
+}
+a{
+  color: darkblue;
+    padding: 20px;
+}
+span{
+  color: black;
+}

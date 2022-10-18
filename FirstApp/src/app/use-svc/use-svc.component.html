@@ -1,0 +1,18 @@
+
+<ul>
+  <li *ngFor="let n of PlugFb()">
+    {{n}}
+  </li>
+</ul>
+<hr>
+<h3>Directly accessing the injected services</h3>
+{{svcObj.showFbNotification()}}
+<hr>
+<h2>Tweets</h2>
+<ul>
+  <li *ngFor="let m of PlugTwitter()">
+    {{m}}
+  </li>
+</ul>
+{{svcObj.showTweets()}}
+

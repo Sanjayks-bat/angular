@@ -1,0 +1,17 @@
+<input type="checkbox" (click)="toggleImage()"/><span>Show Image</span>
+
+<div *ngIf="status == true; then success else fail">{{status}}</div>
+<ng-template #success>
+<div>
+  <img src="../assets/new.jpg" alt="">
+  <h3>Valid User</h3>
+</div>
+</ng-template>
+
+<ng-template #fail>
+<div>
+  <img src="../assets/red.png" alt="">
+  <h3>Invalid User</h3>
+</div>
+</ng-template>
+

@@ -1,0 +1,24 @@
+<div>
+  <button (click)="showUsers()">Users</button>
+  <ul>
+    <li *ngFor="let u of user">
+      <div>ID:{{u.id}}</div>
+      <div>Name:{{u.name}}</div>
+      <div>Username:{{u.username}}</div>
+      <div>Email:{{u.email}}</div>
+      <div style="background-color:floralwhite;color:black">
+      Address:{{u.address.street}}
+      {{u.address.suite}}
+      {{u.address.city}}
+      {{u.address.zipcode}}
+      {{u.address.geo.lat}}
+      {{u.address.geo.lng}} </div>
+      <div>Phone:{{u.phone}}</div>
+      <div>Website:{{u.website}}</div>
+      <div>Company:{{u.company.name}}
+      {{u.company.catchPhrase}}
+      {{u.company.bs}}</div>
+      <hr>
+    </li>
+  </ul>
+</div>

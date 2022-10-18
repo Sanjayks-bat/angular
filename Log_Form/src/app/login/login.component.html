@@ -1,0 +1,29 @@
+<div>
+  <label>Username</label>
+  <input type="text" [(ngModel)]="username" placeholder="Enter a name"/>
+  <br>
+  <hr>
+  <label>Password</label>
+  <input type="text" [(ngModel)]="password" placeholder="Enter a role"/>
+  <br>
+  <hr>
+  <button (click)="Alert()">Login</button>
+  <button (click)="Add()">Add</button>
+  <div>
+    {{alert}}
+  </div>
+  <div #statusDiv>
+      {{status}}
+  </div>
+  <hr>
+  <h3>Users Added</h3>
+  <table style="border-style: solid; border-width: 1px;">
+    <tr>
+      <td>Users</td>
+    </tr>
+    <tr *ngFor="let person of uNames">
+      <td>{{person.name}}</td>
+    </tr>
+  </table>
+
+</div>

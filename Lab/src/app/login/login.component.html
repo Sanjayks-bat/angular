@@ -1,0 +1,15 @@
+<br>
+<div>
+  <label>Username</label>
+  <input type="text" [(ngModel)]="username" placeholder="Enter a name"/>
+  <br>
+  <hr>
+  <label>Password</label>
+  <input type="password" [(ngModel)]="password" placeholder="Enter password"/>
+  <br>
+  <hr>
+  <button (click)="Alert()">Login</button>
+  <div>
+    {{alert}}
+  </div>
+</div>

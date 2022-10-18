@@ -1,0 +1,17 @@
+
+  <button (click)="showComments()">Comments</button>
+  <button (click)="AccessWebApi()">Access web api</button>
+  <button (click)="Access2WebApi()">Acces2Webapi</button>
+  <hr>
+  <p>-----Accessing Web Api-----</p>
+  <h5>{{webApiData| json}}</h5>
+
+  <ul>
+    <li *ngFor="let comment of comments">
+      <div style="background-color: beige;color:coral;border: 5px 5px 5px black;">{{comment.id}}</div>
+      <div>{{comment.email}}</div>
+    </li>
+  </ul>
+
+
+

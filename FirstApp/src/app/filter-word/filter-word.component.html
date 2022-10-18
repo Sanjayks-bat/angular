@@ -1,0 +1,16 @@
+<br>
+<div>
+  <input type="text" [(ngModel)]="word">
+  <span #bw style="display: none;">{{word|blacklist}} </span>
+  <div *ngIf="bw.innerText=='BlackList Word!!'; then failed else success"></div>
+  <ng-template #success>
+    <span style="color: green;"></span>
+  </ng-template>
+  <ng-template #failed>
+    <span style="color: red;"></span>
+  </ng-template>
+</div>
+
+
+
+

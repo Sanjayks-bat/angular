@@ -1,0 +1,30 @@
+<h3>use-pipes works!</h3>
+<hr>
+<h4>Date Pipe</h4>
+<p>{{"9/16/2022" | date:'long'| lowercase}}</p>
+<p>{{"9/16/2022" | date:'short'}}</p>
+<p>{{"9/16/2022" | date:'full'| uppercase}}</p>
+<hr>
+<h4>Decimal Pipe</h4>
+<p>{{1.2346|number:'2.1-2'}}</p>
+<p>{{45/50 | percent:'2.1-2'}}</p>
+<hr>
+<h4>slice</h4>
+<p>{{[10,11,12,13]| slice:1:4}}</p>
+<hr>
+<h4>Currency</h4>
+<p>{{1000| currency: 'INR'}}</p>
+<h4>Custome Pipe Reverse</h4>
+<p>{{"Sanjay"|reverse}}</p>
+<div>
+  <input type="text" [(ngModel)]="personName">
+  <span style="color: red;">{{personName| reverse}}</span>
+</div>
+<br>
+<div><input type="text" [(ngModel)]="searchTerm">
+<ul>
+  <li *ngFor="let p of ppl| search:searchTerm">
+    {{p}}
+  </li>
+</ul>
+</div>
